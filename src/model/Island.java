@@ -1,5 +1,5 @@
 package model;
 
 public class Island {
-    Location[][] locations = new Location[5][5];
+    Cell[][] locations = new Cell[5][5];
 }
