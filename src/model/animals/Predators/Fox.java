@@ -1,23 +1,29 @@
 package model.animals.Predators;
 
+import model.Cell;
+import model.Island;
+
 public class Fox extends Predators {
 
-    public Fox(double weight, int maxPerLocation, int speed, int foodRequired) {
-        super(weight, maxPerLocation, speed, foodRequired);
+    public Fox() {
+        this.weight = 8;
+        this.maxPerLocation = 30;
+        this.speed = 2;
+        this.foodRequired = 2;
     }
 
     @Override
-    public void eat() {
+    public void eat(Cell cell) {
 
     }
 
     @Override
-    public void move() {
+    public void move(Island island, int x, int y) {
 
     }
 
     @Override
-    public void reproduce() {
+    public void reproduce(Cell cell) {
 
     }
 }

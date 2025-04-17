@@ -1,23 +1,29 @@
 package model.animals.Herbivores;
 
+import model.Cell;
+import model.Island;
+
 public class Goat extends Herbivores {
 
-    public Goat(double weight, int maxPerLocation, int speed, int foodRequired) {
-        super(weight, maxPerLocation, speed, foodRequired);
+    public Goat() {
+        this.weight = 60;
+        this.maxPerLocation = 140;
+        this.speed = 3;
+        this.foodRequired = 10;
     }
 
     @Override
-    public void eat() {
+    public void eat(Cell cell) {
 
     }
 
     @Override
-    public void move() {
+    public void move(Island island, int x, int y) {
 
     }
 
     @Override
-    public void reproduce() {
+    public void reproduce(Cell cell) {
 
     }
 }

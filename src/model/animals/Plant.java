@@ -1,10 +1,10 @@
 package model.animals;
 
-public abstract class Plants {
+public abstract class Plant {
     public double weight;
     public int maxPerLocation;
 
-    public Plants(int maxPerLocation, double weight) {
+    public Plant(int maxPerLocation, double weight) {
         this.maxPerLocation = maxPerLocation;
         this.weight = weight;
     }
