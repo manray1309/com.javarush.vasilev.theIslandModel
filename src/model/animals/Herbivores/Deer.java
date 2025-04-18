@@ -12,10 +12,6 @@ public class Deer extends Herbivores {
         this.foodRequired = 50;
     }
 
-    @Override
-    public void eat(Cell cell) {
-
-    }
 
     @Override
     public void move(Island island, int x, int y) {

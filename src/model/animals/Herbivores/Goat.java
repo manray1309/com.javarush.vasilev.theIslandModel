@@ -13,11 +13,6 @@ public class Goat extends Herbivores {
     }
 
     @Override
-    public void eat(Cell cell) {
-
-    }
-
-    @Override
     public void move(Island island, int x, int y) {
 
     }

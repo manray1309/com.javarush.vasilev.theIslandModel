@@ -2,6 +2,9 @@ package model.animals.Predators;
 
 import model.Cell;
 import model.Island;
+import model.animals.Herbivores.Duck;
+import model.animals.Herbivores.Mouse;
+import model.animals.Herbivores.Rabbit;
 
 public class Eagle extends Predators {
 
@@ -10,11 +13,10 @@ public class Eagle extends Predators {
         this.maxPerLocation = 20;
         this.speed = 3;
         this.foodRequired = 1;
-    }
-
-    @Override
-    public void eat(Cell cell) {
-
+        preyChanceMap.put(Fox.class, 10);
+        preyChanceMap.put(Rabbit.class, 90);
+        preyChanceMap.put(Mouse.class, 90);
+        preyChanceMap.put(Duck.class, 80);
     }
 
     @Override

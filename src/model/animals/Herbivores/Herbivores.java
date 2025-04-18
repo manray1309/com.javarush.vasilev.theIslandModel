@@ -2,15 +2,18 @@ package model.animals.Herbivores;
 
 import model.Cell;
 import model.animals.Animal;
+import model.animals.Plant;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public abstract class Herbivores extends Animal {
-    public Map<Class<? extends Animal>, Integer> preyChanceMap = new HashMap<>();
 
     @Override
     public void eat(Cell cell) {
-
+        Plant plant = cell.getPlant();
+        if (plant != null) {
+            cell.removePlant();
+            this.foodRequired = 0;
+            System.out.println("The " + getName() + " ate the plant");
+        }
     }
 }
