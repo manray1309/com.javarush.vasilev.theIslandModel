@@ -1,6 +1,7 @@
 package model.animals.Predators;
 
 import model.Cell;
+import model.Island;
 import model.animals.Animal;
 
 import java.util.HashMap;

@@ -2,6 +2,7 @@ package model.animals.Predators;
 
 import model.Cell;
 import model.Island;
+import model.animals.Animal;
 import model.animals.Herbivores.*;
 
 public class Bear extends Predators {
@@ -21,14 +22,8 @@ public class Bear extends Predators {
         preyChanceMap.put(Duck.class, 10);
     }
 
-
     @Override
-    public void move(Island island, int x, int y) {
-
-    }
-
-    @Override
-    public void reproduce(Cell cell) {
-
+    public Animal createOffSpring() {
+        return new Bear();
     }
 }

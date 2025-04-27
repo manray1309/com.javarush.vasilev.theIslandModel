@@ -14,7 +14,7 @@ public class Island {
         grid = new Cell[height][width];
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
-                grid[y][x] = new Cell();
+                grid[y][x] = new Cell(x, y);
             }
         }
     }

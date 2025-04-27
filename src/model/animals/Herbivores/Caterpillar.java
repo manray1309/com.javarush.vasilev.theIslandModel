@@ -2,6 +2,7 @@ package model.animals.Herbivores;
 
 import model.Cell;
 import model.Island;
+import model.animals.Animal;
 
 public class Caterpillar extends Herbivores {
 
@@ -13,12 +14,7 @@ public class Caterpillar extends Herbivores {
     }
 
     @Override
-    public void move(Island island, int x, int y) {
-
-    }
-
-    @Override
-    public void reproduce(Cell cell) {
-
+    public Animal createOffSpring() {
+        return new Caterpillar();
     }
 }

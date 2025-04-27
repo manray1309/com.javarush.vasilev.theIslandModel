@@ -2,6 +2,7 @@ package model.animals.Predators;
 
 import model.Cell;
 import model.Island;
+import model.animals.Animal;
 import model.animals.Herbivores.Duck;
 import model.animals.Herbivores.Mouse;
 import model.animals.Herbivores.Rabbit;
@@ -20,12 +21,7 @@ public class Snake extends Predators {
     }
 
     @Override
-    public void move(Island island, int x, int y) {
-
-    }
-
-    @Override
-    public void reproduce(Cell cell) {
-
+    public Animal createOffSpring() {
+        return new Snake();
     }
 }

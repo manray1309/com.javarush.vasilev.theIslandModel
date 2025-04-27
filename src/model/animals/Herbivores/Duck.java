@@ -35,12 +35,7 @@ public class Duck extends Herbivores {
     }
 
     @Override
-    public void move(Island island, int x, int y) {
-
-    }
-
-    @Override
-    public void reproduce(Cell cell) {
-
+    public Animal createOffSpring() {
+        return new Duck();
     }
 }
